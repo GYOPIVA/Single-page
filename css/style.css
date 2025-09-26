@@ -37,14 +37,17 @@ body {
     margin-bottom: 40px;
 }
 
-section {
-    padding: 60px 0;
+
+.mobile-menu-icon{
+    display:none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--cor-escura);
 }
 
-.main-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.main-header{
     background-color: var(--cor-branca);
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -53,10 +56,12 @@ section {
     z-index: 1000;
 }
 
-.main-header .container {
+
+.main-header .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    padding: 0 20px;
 }
 
 .logo {
@@ -86,7 +91,7 @@ section {
 
 
 .hero-section {
-    background-color: var(--cor-escura);
+    background: linear-gradient(#002fff, #f0f0f0);
     color: var(--cor-branca);
     min-height: 60vh;
     display: flex;
@@ -116,7 +121,7 @@ section {
 }
 
 .gallery-section {
-    background-color: var(--cor-clara);
+    background: radial-gradient(#1100ff,#ffffff 700px);
 }
 
 .gallery-grid {
@@ -148,10 +153,14 @@ section {
     background-color: var(--cor-branca);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     text-align: center;
     flex: 1 1 300px;
-    max-width: 350px;
+    max-width: 380px;
+}
+
+.testimonials-section{
+        margin: 150px 0;
 }
 
 .testimonial-avatar {
@@ -176,7 +185,8 @@ section {
 }
 
 .contact-section {
-    background-color: var(--cor-clara);
+    background: linear-gradient(#ffffff,#6973ff);
+    padding-bottom: 150px;
 }
 
 .form-container{
@@ -219,4 +229,44 @@ section {
     padding: 20px;
     background-color: var(--cor-escura);
     color: var(--cor-clara);
+}
+
+
+@media (max-width:760px) {
+
+    .main-nav ul{
+        display: none;
+        position: absolute;
+        top: 73px;
+        left: 0;
+        width: 100%;
+        gap: 5px;
+        background-color: var(--cor-branca);
+        flex-direction: column;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    a:hover{
+        background-color: #dadada;
+    }
+    
+    .main-nav ul li{
+        padding: 15px 0;
+        border-top: 1px solid #f0f0f0;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .main-nav.active ul{
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        & a{
+           padding: 20px 400px;
+           font-weight: bold;
+        }
+    }
 }
