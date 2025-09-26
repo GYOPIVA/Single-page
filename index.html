@@ -18,14 +18,17 @@
 <body>
 
     <header class="main-header">
-        <a href="" class="logo">MeuSite</a>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#testimonials">Depoimentos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <a href="" class="logo">MeuSite</a>
+            <nav class="main-nav">
+                <ul class="nav-main">
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-icon" aria-label="Abrir menu">&#9776;</button>
+        </div>
     </header>
 
     <main>
@@ -56,35 +59,36 @@
                 <h2 class="section-title">O Que Dizem Sobre Nós</h2>
                 <div class="testimonials-grid">
                     <article class="testimonial-card">
-                        <img src="./assets/aiony-haust-3TLl_97HNJo-unsplash.jpg" alt="Foto de Maria" class="testimonial-avatar">
+                        <img src="./assets/aiony-haust-3TLl_97HNJo-unsplash.jpg" alt="Foto de Maria"
+                            class="testimonial-avatar">
                         <blockquote>“Trabalho impecável e criativo. Transformaram minha ideia em realidade!”
                         </blockquote>
                         <cite>Maria Silva</cite>
                     </article>
                     <article class="testimonial-card">
-                        <img src="./assets/philip-martin-5aGUyCW_PJw-unsplash.jpg" alt="Foto de João" class="testimonial-avatar">
+                        <img src="./assets/philip-martin-5aGUyCW_PJw-unsplash.jpg" alt="Foto de João"
+                            class="testimonial-avatar">
                         <blockquote>“Profissionalismo e entrega no prazo. Superou minhas expectativas.”</blockquote>
                         <cite>João Pereira</cite>
                     </article>
                 </div>
             </div>
-
-            <section id="contact" class="contact-section">
-                <div class="form-container">
-                    <h2 class="section-title">Fale Conosco</h2>
-                    <form action="#">
-                        <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input type="text" id="name" name="user_name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="text" id="name" name="user_email" required>
-                        </div>
-                        <button type="submit" class="submit-button">Enviar</button>
-                    </form>
-                </div>
-            </section>
+        </section>
+        <section id="contact" class="contact-section">
+            <div class="form-container">
+                <h2 class="section-title">Fale Conosco</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="user_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="name" name="user_email" required>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
 
@@ -92,5 +96,8 @@
         <p>&copy; 2025 MeuSite. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="./js/javascript.js"></script>
+
 </body>
+
 </html>
