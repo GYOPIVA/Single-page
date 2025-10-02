@@ -120,10 +120,6 @@ body {
     font-weight: bold;
 }
 
-.gallery-section {
-    background: radial-gradient(#1100ff,#ffffff 700px);
-}
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -270,3 +266,4 @@ body {
         }
     }
 }
+
